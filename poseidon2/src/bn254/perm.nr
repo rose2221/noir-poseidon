@@ -25,7 +25,7 @@ fn external_3(mut state: [Field; 3]) -> [Field; 3] {
     state
 }
 
-fn external<let T: u32>(mut state: [Field; T]) -> [Field; T] {
+pub fn external<let T: u32>(mut state: [Field; T]) -> [Field; T] {
     let mut mds_parts: Vec<[Field; 4]> = Vec::new();
     for i in 0..T / 4 {
         let offset = (4 * i);
