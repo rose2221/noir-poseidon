@@ -62,7 +62,7 @@ pub fn internal_4(mut state: [Field; 4]) -> [Field; 4] {
     diag_mat_mul(state, consts::internal_diag4)
 }
 
-fn internal_8(mut state: [Field; 8]) -> [Field; 8] {
+pub fn internal_8(mut state: [Field; 8]) -> [Field; 8] {
     diag_mat_mul(state, consts::internal_diag8)
 }
 
