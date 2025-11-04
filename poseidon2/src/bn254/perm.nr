@@ -58,7 +58,7 @@ pub fn external<let T: u32>(mut state: [Field; T]) -> [Field; T] {
     state
 }
 
-fn internal_4(mut state: [Field; 4]) -> [Field; 4] {
+pub fn internal_4(mut state: [Field; 4]) -> [Field; 4] {
     diag_mat_mul(state, consts::internal_diag4)
 }
 
